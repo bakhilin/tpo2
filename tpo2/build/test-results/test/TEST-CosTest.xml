@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CosTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-05-02T11:57:55" hostname="asus" time="0.95">
+  <properties/>
+  <testcase name="testCalculateForPiDividedByTwo()" classname="CosTest" time="0.853"/>
+  <testcase name="testCalculateForOne()" classname="CosTest" time="0.007"/>
+  <testcase name="testCallSinFunction()" classname="CosTest" time="0.057"/>
+  <testcase name="testCalculateForPeriodic()" classname="CosTest" time="0.007"/>
+  <testcase name="testCalculateWithMockSin()" classname="CosTest" time="0.01"/>
+  <testcase name="testCalculateForZero()" classname="CosTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

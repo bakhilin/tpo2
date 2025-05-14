@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CscTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-05-02T11:57:56" hostname="asus" time="0.025">
+  <properties/>
+  <testcase name="testCalculateForPiDividedByTwo()" classname="CscTest" time="0.003"/>
+  <testcase name="testCalculateForOne()" classname="CscTest" time="0.002"/>
+  <testcase name="testNotCalculateForZero()" classname="CscTest" time="0.003"/>
+  <testcase name="testCallSinFunction()" classname="CscTest" time="0.005"/>
+  <testcase name="testCalculateForPeriodic()" classname="CscTest" time="0.003"/>
+  <testcase name="testCalculateWithMockSin()" classname="CscTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

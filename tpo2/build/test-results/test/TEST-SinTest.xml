@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SinTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-05-02T11:57:58" hostname="asus" time="0.009">
+  <properties/>
+  <testcase name="testCalculateForPiDividedByTwo()" classname="SinTest" time="0.002"/>
+  <testcase name="testCalculateForOne()" classname="SinTest" time="0.001"/>
+  <testcase name="testCalculateForPeriodic()" classname="SinTest" time="0.001"/>
+  <testcase name="testCalculateForZero()" classname="SinTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
