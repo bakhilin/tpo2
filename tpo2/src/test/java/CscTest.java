@@ -67,7 +67,7 @@ class CscTest {
         final Csc csc = new Csc();
         final BigDecimal expected = new BigDecimal("1.1884");
         assertEquals(expected, csc.calculate(ONE, DEFAULT_PRECISION));
-    }
+    }         
 
     @Test
     void testCalculateForPeriodic() {

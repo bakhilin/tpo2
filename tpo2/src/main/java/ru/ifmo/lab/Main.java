@@ -74,8 +74,8 @@ public class Main {
         Csv.write(
                 "csv/ln.csv",
                 ln,
-                new BigDecimal(1),
-                new BigDecimal(30),
+                new BigDecimal(0),
+                new BigDecimal(2),
                 new BigDecimal("0.1"),
                 new BigDecimal("0.00000001"));
 
@@ -83,8 +83,8 @@ public class Main {
         Csv.write(
                 "csv/log2.csv",
                 log2,
-                new BigDecimal(1),
-                new BigDecimal(30),
+                new BigDecimal(0),
+                new BigDecimal(2),
                 new BigDecimal("0.1"),
                 new BigDecimal("0.00000001"));
 
@@ -92,8 +92,8 @@ public class Main {
         Csv.write(
                 "csv/log3.csv",
                 log3,
-                new BigDecimal(1),
-                new BigDecimal(30),
+                new BigDecimal(0),
+                new BigDecimal(2),
                 new BigDecimal("0.1"),
                 new BigDecimal("0.00000001"));
 
@@ -101,8 +101,8 @@ public class Main {
         Csv.write(
                 "csv/log5.csv",
                 log5,
-                new BigDecimal(1),
-                new BigDecimal(30),
+                new BigDecimal(0),
+                new BigDecimal(2),
                 new BigDecimal("0.1"),
                 new BigDecimal("0.00000001"));
 
@@ -110,10 +110,10 @@ public class Main {
         Csv.write(
                 "csv/func.csv",
                 func,
-                new BigDecimal(-1),
-                new BigDecimal(1),
-                new BigDecimal("0.1"),
-                new BigDecimal("0.00000001"));
+                new BigDecimal(-2),
+                new BigDecimal(0),
+                new BigDecimal("0.01"),
+                new BigDecimal("0.0001"));
     }
 
 }
