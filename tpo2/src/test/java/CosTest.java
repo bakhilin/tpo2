@@ -3,6 +3,7 @@ import static java.math.BigDecimal.ZERO;
 import static java.math.MathContext.DECIMAL128;
 import static java.math.RoundingMode.HALF_EVEN;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
@@ -13,6 +14,8 @@ import java.math.MathContext;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -30,14 +33,14 @@ class CosTest {
     @Test
     void testCallSinFunction() {
         final Cos cos = new Cos(spySin);
-        cos.calculate(new BigDecimal(6), new BigDecimal("0.001"));
+        cos.calculate(new BigDecimal(1), new BigDecimal("0.0001"));
 
         verify(spySin, atLeastOnce()).calculate(any(BigDecimal.class), any(BigDecimal.class));
     }
 
     @Test
     void testCalculateWithMockSin() {
-        final BigDecimal arg = new BigDecimal(5);
+        final BigDecimal arg = new BigDecimal(2);
         final MathContext mc = new MathContext(DECIMAL128.getPrecision());
         final BigDecimal correctedArg =
                 BigDecimalMath.pi(mc)
@@ -57,6 +60,7 @@ class CosTest {
         final Cos cos = new Cos();
         assertEquals(ONE, cos.calculate(ZERO, DEFAULT_PRECISION));
     }
+
 
     @Test
     void testCalculateForPiDividedByTwo() {
@@ -78,7 +82,33 @@ class CosTest {
     @Test
     void testCalculateForPeriodic() {
         final Cos cos = new Cos();
-        final BigDecimal expected = new BigDecimal("-0.8797");
-        assertEquals(expected, cos.calculate(new BigDecimal(-543), DEFAULT_PRECISION));
+        final BigDecimal expected = new BigDecimal("0.4872");
+        assertEquals(expected, cos.calculate(new BigDecimal(-200), DEFAULT_PRECISION));
+    }
+
+    @Test
+    void testCalculateWithInvalidPrecision() {
+        Cos cos = new Cos();
+        assertThrows(ArithmeticException.class, 
+            () -> cos.calculate(ONE, new BigDecimal("-0.0001")));
+        assertThrows(ArithmeticException.class,
+            () -> cos.calculate(ONE, ZERO));
+    }
+
+
+    @ParameterizedTest
+    @CsvSource({
+        "0.0, 1.0",
+        "3.141592653589793, -1.0",
+        "6.283185307179586, 1.0",
+        "1.0471975511965976, 0.5",  
+        "2.0943951023931953, -0.5"  
+    })
+    void testCalculateForSpecialValues(double x, double expected) {
+        BigDecimal arg = new BigDecimal(x);
+        BigDecimal expectedResult = new BigDecimal(expected);
+        BigDecimal actual = new Cos().calculate(arg, DEFAULT_PRECISION);
+        
+        assertEquals(expectedResult.doubleValue(), actual.doubleValue(), 0.0001);
     }
 }

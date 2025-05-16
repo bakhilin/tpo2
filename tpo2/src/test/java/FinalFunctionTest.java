@@ -466,19 +466,19 @@ class FinalFunctionTest {
 
     @Test
     void testLogarithmicExtremum() {
-        BigDecimal x = new BigDecimal("-1.5");
+        BigDecimal x = new BigDecimal("1.5");
         BigDecimal left = function.calculate(x.subtract(PRECISION), PRECISION);
         BigDecimal center = function.calculate(x, PRECISION);
         BigDecimal right = function.calculate(x.add(PRECISION), PRECISION);
 
         assertTrue(center.compareTo(left) * center.compareTo(right) == 0,
-                "В точке x=-1.5 должен быть экстремум");
+                "В точке x=1.5 должен быть экстремум");
     }
 
     private static final Object[][] TEST_POINTS = {
         {-9.8, 10.5174},
         {-9.6, 1162388.7817}, 
-        {-6.6, 47913.3584},
+        {-6.6, 47913.3584}, 
         {-6.4,-240902240.7926 },
         {-3.4, 11265.4542}, 
         {-3.2, 76540714841.0027},

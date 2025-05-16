@@ -42,15 +42,15 @@ class CotTest {
 
     @Test
     void testCalculateWithMockSinAndMockCos() {
-        final BigDecimal arg = new BigDecimal(5);
+        final BigDecimal arg = new BigDecimal(2);
 
         when(mockSin.calculate(eq(arg), any(BigDecimal.class)))
-                .thenReturn(new BigDecimal("-0.95892427"));
+                .thenReturn(new BigDecimal("0.90929743"));
         when(mockCos.calculate(eq(arg), any(BigDecimal.class)))
-                .thenReturn(new BigDecimal("0.28366218"));
+                .thenReturn(new BigDecimal("-0.41614684"));
 
         final Cot cot = new Cot(mockSin, mockCos);
-        final BigDecimal expectedResult = new BigDecimal("-0.2958");
+        final BigDecimal expectedResult = new BigDecimal("-0.4577");
         assertEquals(expectedResult, cot.calculate(arg, DEFAULT_PRECISION));
     }
 
