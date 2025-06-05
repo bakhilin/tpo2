@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SecTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-06-01T17:04:12" hostname="asus" time="0.012">
+<testsuite name="SecTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-06-05T09:43:45" hostname="asus" time="0.009">
   <properties/>
   <testcase name="testCalculateForOne()" classname="SecTest" time="0.001"/>
-  <testcase name="testCalculateForPeriodic()" classname="SecTest" time="0.002"/>
-  <testcase name="testCalculateWithMockCos()" classname="SecTest" time="0.002"/>
-  <testcase name="testCalculateForZero()" classname="SecTest" time="0.002"/>
-  <testcase name="testCallCosFunction()" classname="SecTest" time="0.002"/>
-  <testcase name="testNotCalculateForPiDividedByTwo()" classname="SecTest" time="0.002"/>
+  <testcase name="testCalculateForPeriodic()" classname="SecTest" time="0.001"/>
+  <testcase name="testCalculateWithMockCos()" classname="SecTest" time="0.001"/>
+  <testcase name="testCalculateForZero()" classname="SecTest" time="0.001"/>
+  <testcase name="testCallCosFunction()" classname="SecTest" time="0.001"/>
+  <testcase name="testNotCalculateForPiDividedByTwo()" classname="SecTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

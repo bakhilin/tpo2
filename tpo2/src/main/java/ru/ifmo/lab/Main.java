@@ -110,9 +110,9 @@ public class Main {
         Csv.write(
                 "csv/func.csv",
                 func,
-                new BigDecimal(-1),
-                new BigDecimal(0),
-                new BigDecimal("0.01"),
+                new BigDecimal(-10),
+                new BigDecimal(1),
+                new BigDecimal("0.0001"),
                 new BigDecimal("0.00000001"));
     }
 

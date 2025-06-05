@@ -199,18 +199,7 @@ class FinalFunctionTest {
         configureMock(mockLog3, "log3");
         configureMock(mockLog5, "log5");
 
-        // when(mockSin.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("-0.84147098"));
-        // when(mockCos.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("0.54030231"));
-        // when(mockTan.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("-1.55740770"));
-        // when(mockCot.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("-0.64209262"));
-        // when(mockCsc.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("-1.18839511"));
-        // when(mockSec.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("1.85081570"));
-        // when(mockLn.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("0.09531016"));
-        // when(mockLog2.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("0.13750352"));
-        // when(mockLog3.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("0.08675506"));
-        // when(mockLog5.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("0.05921954"));
-
-
+    
         FinalFunction system = new FinalFunction(mockSin, mockTan, mockCos, mockCot, mockCsc, mockSec, mockLn, mockLog2, mockLog3, mockLog5);
 
         BigDecimal result = system.calculate(new BigDecimal(-1), DEFAULT_PRECISION);
@@ -235,16 +224,7 @@ class FinalFunctionTest {
         configureMock(mockLn, "ln");
         configureMock(mockLog3, "log3");
         configureMock(mockLog5, "log5");
-        // when(mockSin.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("-0.84147098"));
-        // when(mockCos.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("0.54030231"));
-        // when(mockTan.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("-1.55740770"));
-        // when(mockCot.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("-0.64209262"));
-        // when(mockCsc.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("-1.18839511"));
-        // when(mockSec.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("1.85081570"));
-        // when(mockLn.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("0.09531016"));
-        // when(mockLog3.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("0.08675506"));
-        // when(mockLog5.calculate(any(BigDecimal.class), any(BigDecimal.class))).thenReturn(new BigDecimal("0.05921954"));
-
+      
         
         FinalFunction system = new FinalFunction(mockSin, mockTan, mockCos, mockCot, mockCsc, mockSec, mockLn, new Log(2), mockLog3, mockLog5);
 
@@ -592,11 +572,14 @@ class FinalFunctionTest {
     }
 
     private static final Object[][] TEST_POINTS = {
+        {-9.8414, -9.66816443}, // local extremum
         {-9.5, 6751327628.79252077},
         {-9.42, -800454195863339043684.66636165}, 
         {-6.60000000000000017763568394002504646778106689453125,47896.74522263}, 
         {-6.4000000000000003552713678800500929355621337890625, -239929603.68923333 },
+        {-3.8917, -0.03482634}, // local extremum
         {-3.40,11245.24167460}, 
+        {-3.5582, -9.66816295}, // local extremum
         {-3.20000000000000017763568394002504646778106689453125, 76860016545.40048926},
         {-3.00000000000000017763568394002504646778106689453125, -115922833.25345694},
         {-0.02,-2020655067477986.10855959},

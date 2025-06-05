@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CotTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-06-01T17:04:11" hostname="asus" time="0.056">
+<testsuite name="CotTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-06-05T09:43:43" hostname="asus" time="0.056">
   <properties/>
-  <testcase name="testCalculateForPiDividedByTwo()" classname="CotTest" time="0.021"/>
+  <testcase name="testCalculateForPiDividedByTwo()" classname="CotTest" time="0.022"/>
   <testcase name="testCalculateForOne()" classname="CotTest" time="0.003"/>
   <testcase name="testNotCalculateForZero()" classname="CotTest" time="0.004"/>
   <testcase name="testCalculateForPeriodic()" classname="CotTest" time="0.004"/>
   <testcase name="testCallSinAndCosFunctions()" classname="CotTest" time="0.009"/>
   <testcase name="testCalculateWithMockCos()" classname="CotTest" time="0.003"/>
-  <testcase name="testCalculateWithMockSin()" classname="CotTest" time="0.003"/>
-  <testcase name="testCalculateWithMockSinAndMockCos()" classname="CotTest" time="0.003"/>
+  <testcase name="testCalculateWithMockSin()" classname="CotTest" time="0.004"/>
+  <testcase name="testCalculateWithMockSinAndMockCos()" classname="CotTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

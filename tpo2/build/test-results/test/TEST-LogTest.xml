@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LogTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-06-01T17:04:12" hostname="asus" time="0.023">
+<testsuite name="LogTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-06-05T09:43:45" hostname="asus" time="0.023">
   <properties/>
   <testcase name="testCalculateForOne()" classname="LogTest" time="0.001"/>
-  <testcase name="testNotCalculateForZero()" classname="LogTest" time="0.001"/>
-  <testcase name="testCalculateWithLnMock()" classname="LogTest" time="0.001"/>
+  <testcase name="testNotCalculateForZero()" classname="LogTest" time="0.002"/>
+  <testcase name="testCalculateWithLnMock()" classname="LogTest" time="0.002"/>
   <testcase name="testCalculateForPositive()" classname="LogTest" time="0.01"/>
-  <testcase name="testCallLnFunction()" classname="LogTest" time="0.008"/>
+  <testcase name="testCallLnFunction()" classname="LogTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

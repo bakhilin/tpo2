@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BasicFunctionTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2025-06-01T17:04:09" hostname="asus" time="0.059">
+<testsuite name="BasicFunctionTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2025-06-05T09:43:43" hostname="asus" time="0.063">
   <properties/>
-  <testcase name="[1] ru.ifmo.lab.trigonometry.Sin@18317edc" classname="BasicFunctionTest" time="0.02"/>
-  <testcase name="[2] ru.ifmo.lab.trigonometry.Cos@59e2d8e3" classname="BasicFunctionTest" time="0.002"/>
+  <testcase name="[1] ru.ifmo.lab.trigonometry.Sin@18317edc" classname="BasicFunctionTest" time="0.023"/>
+  <testcase name="[2] ru.ifmo.lab.trigonometry.Cos@59e2d8e3" classname="BasicFunctionTest" time="0.001"/>
   <testcase name="[3] ru.ifmo.lab.trigonometry.Tan@2b72cb8a" classname="BasicFunctionTest" time="0.001"/>
   <testcase name="[4] ru.ifmo.lab.trigonometry.Cot@7f8a9499" classname="BasicFunctionTest" time="0.001"/>
-  <testcase name="[5] ru.ifmo.lab.trigonometry.Sec@5d43661b" classname="BasicFunctionTest" time="0.0"/>
+  <testcase name="[5] ru.ifmo.lab.trigonometry.Sec@5d43661b" classname="BasicFunctionTest" time="0.002"/>
   <testcase name="[6] ru.ifmo.lab.trigonometry.Csc@12299890" classname="BasicFunctionTest" time="0.001"/>
   <testcase name="[7] ru.ifmo.lab.logarithm.Ln@2fba3fc4" classname="BasicFunctionTest" time="0.001"/>
-  <testcase name="[8] ru.ifmo.lab.logarithm.Log@4bf48f6" classname="BasicFunctionTest" time="0.001"/>
-  <testcase name="[9] ru.ifmo.lab.logarithm.Log@420a85c4" classname="BasicFunctionTest" time="0.001"/>
+  <testcase name="[8] ru.ifmo.lab.logarithm.Log@4bf48f6" classname="BasicFunctionTest" time="0.0"/>
+  <testcase name="[9] ru.ifmo.lab.logarithm.Log@420a85c4" classname="BasicFunctionTest" time="0.0"/>
   <testcase name="[1] ru.ifmo.lab.trigonometry.Sin@62833051" classname="BasicFunctionTest" time="0.001"/>
-  <testcase name="[2] ru.ifmo.lab.trigonometry.Cos@a37aefe" classname="BasicFunctionTest" time="0.0"/>
-  <testcase name="[3] ru.ifmo.lab.trigonometry.Tan@5d99c6b5" classname="BasicFunctionTest" time="0.0"/>
-  <testcase name="[4] ru.ifmo.lab.trigonometry.Cot@266374ef" classname="BasicFunctionTest" time="0.002"/>
-  <testcase name="[5] ru.ifmo.lab.trigonometry.Sec@37fb0bed" classname="BasicFunctionTest" time="0.001"/>
+  <testcase name="[2] ru.ifmo.lab.trigonometry.Cos@a37aefe" classname="BasicFunctionTest" time="0.001"/>
+  <testcase name="[3] ru.ifmo.lab.trigonometry.Tan@5d99c6b5" classname="BasicFunctionTest" time="0.001"/>
+  <testcase name="[4] ru.ifmo.lab.trigonometry.Cot@266374ef" classname="BasicFunctionTest" time="0.001"/>
+  <testcase name="[5] ru.ifmo.lab.trigonometry.Sec@37fb0bed" classname="BasicFunctionTest" time="0.0"/>
   <testcase name="[6] ru.ifmo.lab.trigonometry.Csc@a82c5f1" classname="BasicFunctionTest" time="0.0"/>
   <testcase name="[7] ru.ifmo.lab.logarithm.Ln@6a57ae10" classname="BasicFunctionTest" time="0.001"/>
   <testcase name="[8] ru.ifmo.lab.logarithm.Log@28b46423" classname="BasicFunctionTest" time="0.001"/>
