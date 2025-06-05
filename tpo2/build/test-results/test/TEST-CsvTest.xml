@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CsvTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-02T11:57:56" hostname="asus" time="0.109">
+<testsuite name="CsvTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-01T17:04:11" hostname="asus" time="0.069">
   <properties/>
-  <testcase name="testWrite()" classname="CsvTest" time="0.109"/>
+  <testcase name="testWrite()" classname="CsvTest" time="0.069"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[Пропущено значение x = 0.5: Invalid value
 ]]></system-err>
